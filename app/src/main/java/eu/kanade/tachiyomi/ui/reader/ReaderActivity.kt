@@ -318,6 +318,9 @@ class ReaderActivity : BaseActivity() {
         super.onResume()
         viewModel.restartReadTimer()
         setMenuVisibility(viewModel.state.value.menuVisible)
+        // AM (DISCORD) -->
+            updateDiscordRPC(exitingReader = false)
+        // <-- AM (DISCORD)
     }
 
     /**
