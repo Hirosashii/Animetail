@@ -332,6 +332,9 @@ class ReaderActivity : BaseActivity() {
         if (hasFocus) {
             setMenuVisibility(viewModel.state.value.menuVisible)
         }
+        // AM (DISCORD) -->
+            updateDiscordRPC(exitingReader = false)
+        // <-- AM (DISCORD)
     }
 
     override fun onProvideAssistContent(outContent: AssistContent) {
